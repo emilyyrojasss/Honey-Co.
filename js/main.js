@@ -209,6 +209,16 @@
       if (e.key === 'ArrowRight') { e.preventDefault(); goTo(current + 1); }
     }
   });
+
+  let touchStartX = 0;
+  const viewport = track.closest('.testi-viewport');
+  viewport.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+  viewport.addEventListener('touchend', (e) => {
+    const delta = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(delta) > 48) goTo(current + (delta > 0 ? 1 : -1));
+  }, { passive: true });
 })();
 
 
