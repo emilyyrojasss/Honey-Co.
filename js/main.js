@@ -182,6 +182,36 @@
 })();
 
 
+/* ==================== TESTIMONIOS CAROUSEL ==================== */
+(function () {
+  const track   = document.querySelector('.testi-track');
+  if (!track) return;
+
+  const dots    = document.querySelectorAll('.testi-dot');
+  const prevBtn = document.querySelector('.testi-arrow--prev');
+  const nextBtn = document.querySelector('.testi-arrow--next');
+  const total   = track.children.length;
+  let current   = 0;
+
+  function goTo(index) {
+    current = (index + total) % total;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle('is-active', i === current));
+  }
+
+  prevBtn.addEventListener('click', () => goTo(current - 1));
+  nextBtn.addEventListener('click', () => goTo(current + 1));
+  dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+
+  document.addEventListener('keydown', (e) => {
+    if (document.activeElement.closest('.testimonios')) {
+      if (e.key === 'ArrowLeft')  { e.preventDefault(); goTo(current - 1); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); goTo(current + 1); }
+    }
+  });
+})();
+
+
 /* ==================== GALLERY LIGHTBOX ==================== */
 (function () {
   const lightbox = document.getElementById('lightbox');

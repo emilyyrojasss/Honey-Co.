@@ -14,7 +14,7 @@ const T = {
     'footer.tagline': 'Donde cada detalle cuenta.',
     'footer.nav.title': 'Páginas',
     'footer.contact.title': 'Contacto',
-    'footer.copy': '© 2025 Honey & Co. Costa Rica · Todos los derechos reservados',
+    'footer.copy': '© 2026 Honey & Co. Costa Rica · Todos los derechos reservados',
 
     /* INDEX — hero */
     'idx.hero.eyebrow':  'COSTA RICA',
@@ -98,7 +98,7 @@ const T = {
     'footer.tagline': 'Where every detail matters.',
     'footer.nav.title': 'Pages',
     'footer.contact.title': 'Contact',
-    'footer.copy': '© 2025 Honey & Co. Costa Rica · All rights reserved',
+    'footer.copy': '© 2026 Honey & Co. Costa Rica · All rights reserved',
 
     /* INDEX — hero */
     'idx.hero.eyebrow':  'COSTA RICA',
