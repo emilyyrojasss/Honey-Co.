@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios — Honey & Co. · Costa Rica</title>
+  <meta name="description" content="Bodas, eventos corporativos y celebraciones. Conoce todos los servicios de planificación de eventos de Honey &amp; Co. en Costa Rica." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://use.typekit.net/udd7dww.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar" aria-label="Navegación principal">
+    <div class="navbar__inner">
+            <a href="index.html" class="navbar__logo" aria-label="Honey &amp; Co. — inicio">
+        <img src="logo-horizontal.svg" alt="Honey &amp; Co." class="navbar__logo-img" />
+      </a>
+      <div class="navbar__divider" aria-hidden="true"></div>
+      <ul class="navbar__links" role="list">
+        <li><a href="nosotros.html"  class="nav-link" data-i18n="nav.nosotros">Nosotros</a></li>
+        <li><a href="servicios.html" class="nav-link" data-i18n="nav.servicios">Servicios</a></li>
+        <li><a href="galeria.html"   class="nav-link" data-i18n="nav.galeria">Galería</a></li>
+        <li><a href="contacto.html"  class="nav-link" data-i18n="nav.contacto">Contacto</a></li>
+      </ul>
+      <button class="lang-toggle" id="lang-toggle" aria-label="Cambiar idioma / Change language"><span id="lang-active" class="lang-toggle__active">ES</span><span class="lang-toggle__sep">|</span><span id="lang-other">EN</span></button>
+      <button class="navbar__hamburger" id="hamburger"
+              aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menú de navegación" aria-hidden="true">
+    <ul class="mobile-menu__links" role="list">
+      <li><a href="nosotros.html"  class="mobile-link" data-i18n="nav.nosotros">Nosotros</a></li>
+      <li><a href="servicios.html" class="mobile-link" data-i18n="nav.servicios">Servicios</a></li>
+      <li><a href="galeria.html"   class="mobile-link" data-i18n="nav.galeria">Galería</a></li>
+      <li><a href="contacto.html"  class="mobile-link" data-i18n="nav.contacto">Contacto</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Servicios">
+      <div class="hero__pattern" aria-hidden="true"></div>
+      <div class="page-hero__content container">
+        <p class="eyebrow eyebrow--light" data-i18n="srv.hero.eyebrow">LO QUE HACEMOS</p>
+        <h1 class="page-hero__title" data-i18n="srv.hero.title">Servicios a tu medida.</h1>
+        <p class="page-hero__sub" data-i18n="srv.hero.sub">Desde la primera reunión hasta el último detalle del día, estamos contigo.</p>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="servicios" aria-label="Nuestros servicios">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow eyebrow--light" data-i18n="srv.spec.eyebrow">ESPECIALIDADES</p>
+          <h2 class="section-title section-title--light" data-i18n="srv.spec.title">Todo lo que necesitas, en un solo lugar.</h2>
+        </header>
+        <div class="servicios__grid">
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-ring"></i>
+            </div>
+            <h3 class="service-card__title" data-i18n="srv.s1">Bodas</h3>
+            <p class="service-card__desc">
+              Tu boda perfecta no existe por casualidad — existe porque alguien la planeó
+              con amor. Nos encargamos de cada aspecto: venue, catering, decoración floral,
+              iluminación, música, cronograma y coordinación el día del evento. Tú solo
+              tienes que disfrutar y enamorarte.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-building"></i>
+            </div>
+            <h3 class="service-card__title" data-i18n="srv.s2">Corporativos</h3>
+            <p class="service-card__desc">
+              Conferencias, lanzamientos de producto, team buildings, cenas de gala y
+              convenciones. Diseñamos experiencias corporativas que reflejan la identidad
+              de tu marca, motivan a tu equipo y generan conversación. Desde 20 hasta
+              500 asistentes.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-champagne-glasses"></i>
+            </div>
+            <h3 class="service-card__title" data-i18n="srv.s3">Celebraciones</h3>
+            <p class="service-card__desc">
+              Quinceaños, aniversarios de bodas, baby showers, cumpleaños especiales y
+              todas las ocasiones que merecen ser recordadas. Cada celebración es única y
+              personal, y la tratamos como tal — sin fórmulas, sin plantillas.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-church"></i>
+            </div>
+            <h3 class="service-card__title" data-i18n="srv.s4">Eventos Religiosos</h3>
+            <p class="service-card__desc">
+              Primeras comuniones, confirmaciones, bautizos y todas las celebraciones de fe.
+              Entendemos la importancia espiritual de estos momentos y los tratamos con la
+              delicadeza, el respeto y la atención que merecen.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO TRABAJAMOS -->
+    <section class="process" aria-label="Cómo trabajamos">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow" data-i18n="srv.proc.eyebrow">NUESTRO PROCESO</p>
+          <h2 class="section-title" data-i18n="srv.proc.title">Cómo trabajamos contigo.</h2>
+        </header>
+        <div class="process__grid">
+          <div class="process__step">
+            <div class="process__icon" aria-hidden="true">
+            <i class="fa-regular fa-comments"></i>
+          </div>
+            <p class="process__num">01</p>
+            <h3 class="process__title" data-i18n="srv.p1">Consulta inicial</h3>
+            <p class="process__desc">Nos reunimos (virtual o presencial) para conocerte, entender tu visión, tu presupuesto y los detalles esenciales de tu evento.</p>
+          </div>
+          <div class="process__step">
+            <div class="process__icon" aria-hidden="true">
+            <i class="fa-regular fa-file-lines"></i>
+          </div>
+            <p class="process__num">02</p>
+            <h3 class="process__title" data-i18n="srv.p2">Propuesta a medida</h3>
+            <p class="process__desc">En menos de 48 horas te enviamos una propuesta detallada con opciones de proveedores, cronograma preliminar y presupuesto desglosado.</p>
+          </div>
+          <div class="process__step">
+            <div class="process__icon" aria-hidden="true">
+            <i class="fa-regular fa-calendar-check"></i>
+          </div>
+            <p class="process__num">03</p>
+            <h3 class="process__title" data-i18n="srv.p3">Planificación</h3>
+            <p class="process__desc">Coordinamos cada proveedor, gestionamos contratos, confirmamos detalles y te mantenemos informada en cada etapa del proceso.</p>
+          </div>
+          <div class="process__step">
+            <div class="process__icon" aria-hidden="true">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+            <p class="process__num">04</p>
+            <h3 class="process__title" data-i18n="srv.p4">El gran día</h3>
+            <p class="process__desc">Estamos presentes desde la primera hora hasta el último invitado. Tú disfrutas; nosotras nos encargamos de todo lo demás.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band" aria-label="Llamado a la acción">
+      <div class="container">
+        <div class="cta-band__rule" aria-hidden="true"></div>
+        <h2 class="cta-band__title" data-i18n="srv.cta.title">¿Cuál es tu próximo evento?</h2>
+        <p class="cta-band__sub" data-i18n="srv.cta.sub">Dinos qué tienes en mente y construimos algo extraordinario juntas.</p>
+        <a href="contacto.html" class="btn btn--primary" data-i18n="srv.cta.btn">Cotiza tu evento</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Pie de página">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo" aria-label="Honey &amp; Co. — inicio">
+          <img src="logo-full.svg" alt="Honey &amp; Co." class="footer__logo-img" />
+        </a>
+        <p class="footer__tagline" data-i18n="footer.tagline">Donde cada detalle cuenta.</p>
+        <div class="footer__social" aria-label="Redes sociales">
+          <a href="https://www.instagram.com/honeyandco.cr/" class="social-link" aria-label="Instagram @honeyandco.cr" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://wa.me/50683122111" class="social-link" aria-label="WhatsApp +506 8312-2111" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <nav class="footer__nav" aria-label="Navegación secundaria">
+        <p class="footer__col-title" data-i18n="footer.nav.title">Páginas</p>
+        <ul class="footer__nav-list">
+          <li><a href="nosotros.html" class="footer__nav-link" data-i18n="nav.nosotros">Nosotros</a></li>
+          <li><a href="servicios.html" class="footer__nav-link" data-i18n="nav.servicios">Servicios</a></li>
+          <li><a href="galeria.html" class="footer__nav-link" data-i18n="nav.galeria">Galería</a></li>
+          <li><a href="contacto.html" class="footer__nav-link" data-i18n="nav.contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact-col">
+        <p class="footer__col-title" data-i18n="footer.contact.title">Contacto</p>
+        <a href="mailto:info@honeyandco.cr" class="footer__contact-link">info@honeyandco.cr</a>
+        <a href="https://wa.me/50683122111" class="footer__contact-link" target="_blank" rel="noopener noreferrer">+506 8312-2111</a>
+        <a href="https://www.instagram.com/honeyandco.cr/" class="footer__contact-link" target="_blank" rel="noopener noreferrer">@honeyandco.cr</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copy" data-i18n="footer.copy">&copy; 2025 Honey &amp; Co. Costa Rica &middot; Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a href="https://wa.me/50683122111" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chatear por WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

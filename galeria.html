@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería — Honey & Co. · Costa Rica</title>
+  <meta name="description" content="Galería de eventos de Honey &amp; Co. — bodas, eventos corporativos y celebraciones en Costa Rica." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://use.typekit.net/udd7dww.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar" aria-label="Navegación principal">
+    <div class="navbar__inner">
+            <a href="index.html" class="navbar__logo" aria-label="Honey &amp; Co. — inicio">
+        <img src="logo-horizontal.svg" alt="Honey &amp; Co." class="navbar__logo-img" />
+      </a>
+      <div class="navbar__divider" aria-hidden="true"></div>
+      <ul class="navbar__links" role="list">
+        <li><a href="nosotros.html"  class="nav-link" data-i18n="nav.nosotros">Nosotros</a></li>
+        <li><a href="servicios.html" class="nav-link" data-i18n="nav.servicios">Servicios</a></li>
+        <li><a href="galeria.html"   class="nav-link" data-i18n="nav.galeria">Galería</a></li>
+        <li><a href="contacto.html"  class="nav-link" data-i18n="nav.contacto">Contacto</a></li>
+      </ul>
+      <button class="lang-toggle" id="lang-toggle" aria-label="Cambiar idioma / Change language"><span id="lang-active" class="lang-toggle__active">ES</span><span class="lang-toggle__sep">|</span><span id="lang-other">EN</span></button>
+      <button class="navbar__hamburger" id="hamburger"
+              aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menú de navegación" aria-hidden="true">
+    <ul class="mobile-menu__links" role="list">
+      <li><a href="nosotros.html"  class="mobile-link" data-i18n="nav.nosotros">Nosotros</a></li>
+      <li><a href="servicios.html" class="mobile-link" data-i18n="nav.servicios">Servicios</a></li>
+      <li><a href="galeria.html"   class="mobile-link" data-i18n="nav.galeria">Galería</a></li>
+      <li><a href="contacto.html"  class="mobile-link" data-i18n="nav.contacto">Contacto</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Galería">
+      <div class="hero__pattern" aria-hidden="true"></div>
+      <div class="page-hero__content container">
+        <p class="eyebrow eyebrow--light" data-i18n="gal.hero.eyebrow">NUESTRO TRABAJO</p>
+        <h1 class="page-hero__title" data-i18n="gal.hero.title">Cada detalle, cuidado con amor.</h1>
+        <p class="page-hero__sub" data-i18n="gal.hero.sub">Una colección de los momentos que hemos tenido el privilegio de crear.</p>
+      </div>
+    </section>
+
+    <!-- GALERÍA COMPLETA -->
+    <section class="galeria" aria-label="Galería de eventos">
+      <div class="container">
+        <div class="galeria__grid">
+
+          <div class="gallery-item" data-index="1" tabindex="0" role="button" aria-label="Ver imagen 1 en pantalla completa">
+            <div class="gallery-item__bg">
+              <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=700&h=700&fit=crop&auto=format&q=80"
+                   alt="Ceremonia de boda al aire libre" loading="lazy" />
+            </div>
+            <div class="gallery-item__overlay" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10.5" cy="10.5" r="6.5" stroke="#C6A75E" stroke-width="1.4"/>
+                <path d="M15 15L20 20" stroke="#C6A75E" stroke-width="1.4" stroke-linecap="round"/>
+                <line x1="10.5" y1="7.5" x2="10.5" y2="13.5" stroke="#C6A75E" stroke-width="1.4" stroke-linecap="round"/>
+                <line x1="7.5" y1="10.5" x2="13.5" y2="10.5" stroke="#C6A75E" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="2" tabindex="0" role="button" aria-label="Ver imagen 2 en pantalla completa">
+            <div class="gallery-item__bg">
+              <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=700&h=700&fit=crop&auto=format&q=80"
+                   alt="Ramo de flores para boda" loading="lazy" />
+            </div>
+            <div class="gallery-item__overlay" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10.5" cy="10.5" r="6.5" stroke="#C6A75E" stroke-width="1.4"/>
+                <path d="M15 15L20 20" stroke="#C6A75E" stroke-width="1.4" stroke-linecap="round"/>
+                <line x1="10.5" y1="7.5" x2="10.5" y2="13.5" stroke="#C6A75E" stroke-width="1.4" stroke-linecap="round"/>
+                <line x1="7.5" y1="10.5" x2="13.5" y2="10.5" stroke="#C6A75E" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="3" tabindex="0" role="button" aria-label="Ver imagen 3 en pantalla completa">
+            <div class="gallery-item__bg">
+              <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=700&h=700&fit=crop&auto=format&q=80"
+                   alt="Decoración elegante de mesa para evento" loading="lazy" />
+            </div>
+            <div class="gallery-item__overlay" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10.5" cy="10.5" r="6.5" stroke="#C6A75E" stroke-width="1.4"/>
+                <path d="M15 15L20 20" stroke="#C6A75E" stroke-width="1.4" stroke-linecap="round"/>
+                <line x1="10.5" y1="7.5" x2="10.5" y2="13.5" stroke="#C6A75E" stroke-width="1.4" stroke-linecap="round"/>
+                <line x1="7.5" y1="10.5" x2="13.5" y2="10.5" stroke="#C6A75E" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="4" tabindex="0" role="button" aria-label="Ver imagen 4 en pantalla completa">
+            <div class="gallery-item__bg">
+              <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=700&h=700&fit=crop&auto=format&q=80"
+                   alt="Celebración con luces y decoración festiva" loading="lazy" />
+            </div>
+            <div class="gallery-item__overlay" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10.5" cy="10.5" r="6.5" stroke="#C6A75E" stroke-width="1.4"/>
+                <path d="M15 15L20 20" stroke="#C6A75E" stroke-width="1.4" stroke-linecap="round"/>
+                <line x1="10.5" y1="7.5" x2="10.5" y2="13.5" stroke="#C6A75E" stroke-width="1.4" stroke-linecap="round"/>
+                <line x1="7.5" y1="10.5" x2="13.5" y2="10.5" stroke="#C6A75E" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="5" tabindex="0" role="button" aria-label="Ver imagen 5 en pantalla completa">
+            <div class="gallery-item__bg">
+              <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=700&h=700&fit=crop&auto=format&q=80"
+                   alt="Recepción de boda con mesas decoradas" loading="lazy" />
+            </div>
+            <div class="gallery-item__overlay" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10.5" cy="10.5" r="6.5" stroke="#C6A75E" stroke-width="1.4"/>
+                <path d="M15 15L20 20" stroke="#C6A75E" stroke-width="1.4" stroke-linecap="round"/>
+                <line x1="10.5" y1="7.5" x2="10.5" y2="13.5" stroke="#C6A75E" stroke-width="1.4" stroke-linecap="round"/>
+                <line x1="7.5" y1="10.5" x2="13.5" y2="10.5" stroke="#C6A75E" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="6" tabindex="0" role="button" aria-label="Ver imagen 6 en pantalla completa">
+            <div class="gallery-item__bg">
+              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&h=700&fit=crop&auto=format&q=80"
+                   alt="Evento corporativo con auditorio iluminado" loading="lazy" />
+            </div>
+            <div class="gallery-item__overlay" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10.5" cy="10.5" r="6.5" stroke="#C6A75E" stroke-width="1.4"/>
+                <path d="M15 15L20 20" stroke="#C6A75E" stroke-width="1.4" stroke-linecap="round"/>
+                <line x1="10.5" y1="7.5" x2="10.5" y2="13.5" stroke="#C6A75E" stroke-width="1.4" stroke-linecap="round"/>
+                <line x1="7.5" y1="10.5" x2="13.5" y2="10.5" stroke="#C6A75E" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true"
+         aria-label="Vista ampliada de imagen" aria-hidden="true">
+      <div class="lightbox__overlay" id="lightbox-overlay"></div>
+      <div class="lightbox__content">
+        <div class="lightbox__placeholder">
+          <span id="lightbox-num"></span>
+        </div>
+        <button class="lightbox__close" id="lightbox-close" aria-label="Cerrar imagen">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="5" y1="5" x2="19" y2="19" stroke="#C6A75E" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="19" y1="5" x2="5" y2="19" stroke="#C6A75E" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- CTA BAND -->
+    <section class="cta-band" aria-label="Llamado a la acción">
+      <div class="container">
+        <div class="cta-band__rule" aria-hidden="true"></div>
+        <h2 class="cta-band__title" data-i18n="gal.cta.title">¿Quieres que tu evento esté aquí?</h2>
+        <p class="cta-band__sub" data-i18n="gal.cta.sub">Cada imagen en esta galería fue un sueño que alguien decidió hacer realidad.</p>
+        <a href="contacto.html" class="btn btn--primary" data-i18n="gal.cta.btn">Cotiza tu evento</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Pie de página">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo" aria-label="Honey &amp; Co. — inicio">
+          <img src="logo-full.svg" alt="Honey &amp; Co." class="footer__logo-img" />
+        </a>
+        <p class="footer__tagline" data-i18n="footer.tagline">Donde cada detalle cuenta.</p>
+        <div class="footer__social" aria-label="Redes sociales">
+          <a href="https://www.instagram.com/honeyandco.cr/" class="social-link" aria-label="Instagram @honeyandco.cr" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://wa.me/50683122111" class="social-link" aria-label="WhatsApp +506 8312-2111" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <nav class="footer__nav" aria-label="Navegación secundaria">
+        <p class="footer__col-title" data-i18n="footer.nav.title">Páginas</p>
+        <ul class="footer__nav-list">
+          <li><a href="nosotros.html" class="footer__nav-link" data-i18n="nav.nosotros">Nosotros</a></li>
+          <li><a href="servicios.html" class="footer__nav-link" data-i18n="nav.servicios">Servicios</a></li>
+          <li><a href="galeria.html" class="footer__nav-link" data-i18n="nav.galeria">Galería</a></li>
+          <li><a href="contacto.html" class="footer__nav-link" data-i18n="nav.contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact-col">
+        <p class="footer__col-title" data-i18n="footer.contact.title">Contacto</p>
+        <a href="mailto:info@honeyandco.cr" class="footer__contact-link">info@honeyandco.cr</a>
+        <a href="https://wa.me/50683122111" class="footer__contact-link" target="_blank" rel="noopener noreferrer">+506 8312-2111</a>
+        <a href="https://www.instagram.com/honeyandco.cr/" class="footer__contact-link" target="_blank" rel="noopener noreferrer">@honeyandco.cr</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copy" data-i18n="footer.copy">&copy; 2025 Honey &amp; Co. Costa Rica &middot; Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a href="https://wa.me/50683122111" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chatear por WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

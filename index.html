@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Honey & Co. — Event Planning · Costa Rica</title>
+  <meta name="description" content="Honey &amp; Co. — Más de 17 años organizando eventos corporativos, religiosos y celebraciones especiales en Costa Rica. Desde eventos pequeños hasta convenciones nacionales e internacionales." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://use.typekit.net/udd7dww.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" aria-label="Navegación principal">
+    <div class="navbar__inner">
+            <a href="index.html" class="navbar__logo" aria-label="Honey &amp; Co. — inicio">
+        <img src="logo-horizontal.svg" alt="Honey &amp; Co." class="navbar__logo-img" />
+      </a>
+      <div class="navbar__divider" aria-hidden="true"></div>
+      <ul class="navbar__links" role="list">
+        <li><a href="nosotros.html"  class="nav-link" data-i18n="nav.nosotros">Nosotros</a></li>
+        <li><a href="servicios.html" class="nav-link" data-i18n="nav.servicios">Servicios</a></li>
+        <li><a href="galeria.html"   class="nav-link" data-i18n="nav.galeria">Galería</a></li>
+        <li><a href="contacto.html"  class="nav-link" data-i18n="nav.contacto">Contacto</a></li>
+      </ul>
+      <button class="lang-toggle" id="lang-toggle" aria-label="Cambiar idioma / Change language"><span id="lang-active" class="lang-toggle__active">ES</span><span class="lang-toggle__sep">|</span><span id="lang-other">EN</span></button>
+      <button class="navbar__hamburger" id="hamburger"
+              aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menú de navegación" aria-hidden="true">
+    <ul class="mobile-menu__links" role="list">
+      <li><a href="nosotros.html"  class="mobile-link" data-i18n="nav.nosotros">Nosotros</a></li>
+      <li><a href="servicios.html" class="mobile-link" data-i18n="nav.servicios">Servicios</a></li>
+      <li><a href="galeria.html"   class="mobile-link" data-i18n="nav.galeria">Galería</a></li>
+      <li><a href="contacto.html"  class="mobile-link" data-i18n="nav.contacto">Contacto</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-label="Sección principal">
+      <div class="hero__pattern" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="eyebrow hero__eyebrow" data-i18n="idx.hero.eyebrow">COSTA RICA</p>
+        <div class="hero__rule" aria-hidden="true"></div>
+        <h1 class="hero__title" data-i18n-html="idx.hero.title">
+          Cada evento,<br>una historia que contar.
+        </h1>
+        <p class="hero__subtitle" data-i18n="idx.hero.subtitle">
+          Convertimos tus ideas en momentos que no se olvidan.
+        </p>
+        <a href="contacto.html" class="btn btn--primary" data-i18n="idx.hero.cta">Cotiza tu evento</a>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <div class="scroll-mouse"><span class="scroll-dot"></span></div>
+      </div>
+    </section>
+
+    <!-- QUIÉNES SOMOS — teaser -->
+    <section class="nosotros" aria-label="Quiénes somos">
+      <div class="container nosotros__grid">
+        <div class="nosotros__text">
+          <p class="eyebrow" data-i18n="idx.about.eyebrow">QUIÉNES SOMOS</p>
+          <h2 class="nosotros__title" data-i18n="idx.about.title">
+            Más de 17 años creando momentos que perduran en la memoria.
+          </h2>
+          <p class="nosotros__body">
+            Con más de 17 años de experiencia, en Honey &amp; Co. nos especializamos en la organización
+            y planificación de eventos corporativos, religiosos, celebraciones especiales y mucho más.
+            Hemos sido parte de más de 100 actividades — desde eventos pequeños e íntimos hasta
+            convenciones nacionales e internacionales.
+          </p>
+          <p class="nosotros__body">
+            Trabajamos constantemente para que puedas despreocuparte por completo y vivir una
+            experiencia única. Contamos con aliados de alta experiencia y proveedores de altos
+            estándares de calidad y responsabilidad.
+          </p>
+          <div class="nosotros__stats">
+            <div class="stat">
+              <span class="stat__num">100+</span>
+              <span class="stat__label">Actividades realizadas</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">17+</span>
+              <span class="stat__label">Años de experiencia</span>
+            </div>
+          </div>
+          <a href="nosotros.html" class="link-arrow" data-i18n="idx.about.link" style="margin-top:40px;display:inline-flex;">Conoce nuestra historia</a>
+        </div>
+        <div class="nosotros__image" aria-label="Fotografía del equipo Honey &amp; Co.">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=680&h=820&fit=crop&auto=format&q=80"
+               alt="Equipo Honey &amp; Co. planificando un evento" loading="lazy"
+               style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS — overview -->
+    <section class="servicios" aria-label="Nuestros servicios">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow eyebrow--light" data-i18n="idx.srv.eyebrow">LO QUE HACEMOS</p>
+          <h2 class="section-title section-title--light" data-i18n="idx.srv.title">Servicios</h2>
+        </header>
+        <div class="servicios__grid">
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-ring"></i>
+            </div>
+            <h3 class="service-card__title" data-i18n="idx.srv.s1">Bodas</h3>
+            <p class="service-card__desc">Hacemos realidad la boda que siempre soñaste. Coordinamos cada momento para que solo tengas que disfrutar tu día más especial.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-building"></i>
+            </div>
+            <h3 class="service-card__title" data-i18n="idx.srv.s2">Corporativos</h3>
+            <p class="service-card__desc">Conferencias, lanzamientos y cenas de gala. Diseñamos experiencias que reflejan la identidad de tu marca y dejan huella.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-champagne-glasses"></i>
+            </div>
+            <h3 class="service-card__title" data-i18n="idx.srv.s3">Celebraciones</h3>
+            <p class="service-card__desc">Quinceaños, aniversarios, baby showers y todas las ocasiones especiales. Cada fiesta es una historia única y personal.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <i class="fa-solid fa-church"></i>
+            </div>
+            <h3 class="service-card__title" data-i18n="idx.srv.s4">Eventos Religiosos</h3>
+            <p class="service-card__desc">Primeras comuniones, confirmaciones, bautizos y celebraciones de fe. Organizamos cada detalle para que el día sea tan sagrado y especial como merece.</p>
+          </article>
+
+        </div>
+        <div class="section-more">
+          <a href="servicios.html" class="link-arrow link-arrow--light">Explorar todos los servicios</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA — preview (3 items) -->
+    <section class="home-gallery" aria-label="Vista previa de galería">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow" data-i18n="idx.gal.eyebrow">NUESTRO TRABAJO</p>
+          <h2 class="section-title" data-i18n="idx.gal.title">Una mirada a nuestros eventos.</h2>
+        </header>
+        <div class="home-gallery__grid">
+          <a href="galeria.html" class="gallery-preview-item" aria-label="Ver galería completa">
+            <div class="gallery-preview-item__bg">
+              <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=680&h=680&fit=crop&auto=format&q=80"
+                   alt="Ceremonia de boda al aire libre" loading="lazy" />
+            </div>
+            <div class="gallery-preview-item__overlay" aria-hidden="true"><span>Ver galería</span></div>
+          </a>
+          <a href="galeria.html" class="gallery-preview-item" aria-label="Ver galería completa">
+            <div class="gallery-preview-item__bg">
+              <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=680&h=680&fit=crop&auto=format&q=80"
+                   alt="Decoración elegante de mesa para evento" loading="lazy" />
+            </div>
+            <div class="gallery-preview-item__overlay" aria-hidden="true"><span>Ver galería</span></div>
+          </a>
+          <a href="galeria.html" class="gallery-preview-item" aria-label="Ver galería completa">
+            <div class="gallery-preview-item__bg">
+              <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=680&h=680&fit=crop&auto=format&q=80"
+                   alt="Celebración con decoración de luces" loading="lazy" />
+            </div>
+            <div class="gallery-preview-item__overlay" aria-hidden="true"><span>Ver galería</span></div>
+          </a>
+        </div>
+        <div class="section-more">
+          <a href="galeria.html" class="btn btn--outline">Ver galería completa</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonios" aria-label="Testimonios de clientes">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow" data-i18n="idx.testi.eyebrow">LO QUE DICEN</p>
+          <h2 class="section-title" data-i18n="idx.testi.title">Historias que nos inspiran.</h2>
+        </header>
+        <div class="testimonios__grid">
+
+          <article class="testimonio-card">
+            <div class="testimonio-card__quote" aria-hidden="true">&ldquo;</div>
+            <p class="testimonio-card__text">Honey &amp; Co. convirtió nuestra boda en algo más hermoso de lo que jamás imaginamos. Cada detalle, desde las flores hasta la última mesa, fue impecable. Nuestros invitados aún nos hablan de esa noche como la más bonita a la que han asistido.</p>
+            <div class="testimonio-card__author">
+              <img class="testimonio-card__photo"
+                   src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=120&h=120&fit=crop&crop=faces&auto=format&q=80"
+                   alt="Ana Sofía Rodríguez" loading="lazy" />
+              <div>
+                <p class="testimonio-card__name">Ana Sofía Rodríguez</p>
+                <p class="testimonio-card__event">Boda · Guanacaste</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonio-card">
+            <div class="testimonio-card__quote" aria-hidden="true">&ldquo;</div>
+            <p class="testimonio-card__text">Organizaron nuestra conferencia anual para 300 personas con una logística impecable. El resultado superó todas las expectativas de nuestra junta directiva. Profesionalismo y creatividad en cada etapa del proceso.</p>
+            <div class="testimonio-card__author">
+              <img class="testimonio-card__photo"
+                   src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&h=120&fit=crop&crop=faces&auto=format&q=80"
+                   alt="Marcela Vargas" loading="lazy" />
+              <div>
+                <p class="testimonio-card__name">Marcela Vargas</p>
+                <p class="testimonio-card__event">Evento Corporativo · San José</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonio-card">
+            <div class="testimonio-card__quote" aria-hidden="true">&ldquo;</div>
+            <p class="testimonio-card__text">Mi hija soñaba con una quinceaños de cuento. Honey &amp; Co. lo hizo realidad con un cuidado y dedicación que nunca esperé. La atención fue personalísima desde el primer día. ¡Fue una noche perfecta!</p>
+            <div class="testimonio-card__author">
+              <img class="testimonio-card__photo"
+                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&h=120&fit=crop&crop=faces&auto=format&q=80"
+                   alt="Gabriela Solís" loading="lazy" />
+              <div>
+                <p class="testimonio-card__name">Gabriela Solís</p>
+                <p class="testimonio-card__event">Quinceaños · Heredia</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band" aria-label="Llamado a la acción">
+      <div class="container">
+        <div class="cta-band__rule" aria-hidden="true"></div>
+        <h2 class="cta-band__title" data-i18n="idx.cta.title">¿Lista para crear tu evento?</h2>
+        <p class="cta-band__sub" data-i18n="idx.cta.sub">Conversemos sobre tus ideas y hagamos que sucedan.</p>
+        <a href="contacto.html" class="btn btn--primary" data-i18n="idx.cta.btn">Cotiza tu evento</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Pie de página">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo" aria-label="Honey &amp; Co. — inicio">
+          <img src="logo-full.svg" alt="Honey &amp; Co." class="footer__logo-img" />
+        </a>
+        <p class="footer__tagline" data-i18n="footer.tagline">Donde cada detalle cuenta.</p>
+        <div class="footer__social" aria-label="Redes sociales">
+          <a href="https://www.instagram.com/honeyandco.cr/" class="social-link" aria-label="Instagram @honeyandco.cr" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://wa.me/50683122111" class="social-link" aria-label="WhatsApp +506 8312-2111" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <nav class="footer__nav" aria-label="Navegación secundaria">
+        <p class="footer__col-title" data-i18n="footer.nav.title">Páginas</p>
+        <ul class="footer__nav-list">
+          <li><a href="nosotros.html" class="footer__nav-link" data-i18n="nav.nosotros">Nosotros</a></li>
+          <li><a href="servicios.html" class="footer__nav-link" data-i18n="nav.servicios">Servicios</a></li>
+          <li><a href="galeria.html" class="footer__nav-link" data-i18n="nav.galeria">Galería</a></li>
+          <li><a href="contacto.html" class="footer__nav-link" data-i18n="nav.contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact-col">
+        <p class="footer__col-title" data-i18n="footer.contact.title">Contacto</p>
+        <a href="mailto:info@honeyandco.cr" class="footer__contact-link">info@honeyandco.cr</a>
+        <a href="https://wa.me/50683122111" class="footer__contact-link" target="_blank" rel="noopener noreferrer">+506 8312-2111</a>
+        <a href="https://www.instagram.com/honeyandco.cr/" class="footer__contact-link" target="_blank" rel="noopener noreferrer">@honeyandco.cr</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copy" data-i18n="footer.copy">&copy; 2025 Honey &amp; Co. Costa Rica &middot; Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a href="https://wa.me/50683122111" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chatear por WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

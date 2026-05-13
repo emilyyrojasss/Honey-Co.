@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto — Honey & Co. · Costa Rica</title>
+  <meta name="description" content="Cotiza tu evento con Honey &amp; Co. en Costa Rica. Bodas, eventos corporativos y celebraciones. Te contactamos en menos de 24 horas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://use.typekit.net/udd7dww.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar" aria-label="Navegación principal">
+    <div class="navbar__inner">
+            <a href="index.html" class="navbar__logo" aria-label="Honey &amp; Co. — inicio">
+        <img src="logo-horizontal.svg" alt="Honey &amp; Co." class="navbar__logo-img" />
+      </a>
+      <div class="navbar__divider" aria-hidden="true"></div>
+      <ul class="navbar__links" role="list">
+        <li><a href="nosotros.html"  class="nav-link" data-i18n="nav.nosotros">Nosotros</a></li>
+        <li><a href="servicios.html" class="nav-link" data-i18n="nav.servicios">Servicios</a></li>
+        <li><a href="galeria.html"   class="nav-link" data-i18n="nav.galeria">Galería</a></li>
+        <li><a href="contacto.html"  class="nav-link" data-i18n="nav.contacto">Contacto</a></li>
+      </ul>
+      <button class="lang-toggle" id="lang-toggle" aria-label="Cambiar idioma / Change language"><span id="lang-active" class="lang-toggle__active">ES</span><span class="lang-toggle__sep">|</span><span id="lang-other">EN</span></button>
+      <button class="navbar__hamburger" id="hamburger"
+              aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menú de navegación" aria-hidden="true">
+    <ul class="mobile-menu__links" role="list">
+      <li><a href="nosotros.html"  class="mobile-link" data-i18n="nav.nosotros">Nosotros</a></li>
+      <li><a href="servicios.html" class="mobile-link" data-i18n="nav.servicios">Servicios</a></li>
+      <li><a href="galeria.html"   class="mobile-link" data-i18n="nav.galeria">Galería</a></li>
+      <li><a href="contacto.html"  class="mobile-link" data-i18n="nav.contacto">Contacto</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Contacto">
+      <div class="hero__pattern" aria-hidden="true"></div>
+      <div class="page-hero__content container">
+        <p class="eyebrow eyebrow--light" data-i18n="con.hero.eyebrow">HABLEMOS</p>
+        <h1 class="page-hero__title" data-i18n="con.hero.title">Cotiza tu evento.</h1>
+        <p class="page-hero__sub" data-i18n="con.hero.sub">Cuéntanos tu idea y te contactamos en menos de 24 horas.</p>
+      </div>
+    </section>
+
+    <!-- FORMULARIO DE COTIZACIÓN -->
+    <section class="contacto" aria-label="Formulario de cotización">
+      <div class="container">
+
+        <form class="quote-form" id="quote-form" novalidate>
+          <!-- Web3Forms: ve a https://web3forms.com, ingresa gsp2876@gmail.com y pega tu access key aquí -->
+          <input type="hidden" name="access_key" value="TU_ACCESS_KEY_AQUI" />
+          <input type="hidden" name="subject" value="Nueva cotización — Honey &amp; Co." />
+          <input type="hidden" name="from_name" value="Honey &amp; Co. Website" />
+          <input type="hidden" name="redirect" value="false" />
+          <div class="form-grid">
+
+            <div class="field-group">
+              <input type="text" id="nombre" name="nombre"
+                     class="field-input" placeholder=" " required autocomplete="name" />
+              <label for="nombre" class="field-label" data-i18n="con.f.nombre">Nombre completo</label>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+
+            <div class="field-group">
+              <input type="email" id="email" name="email"
+                     class="field-input" placeholder=" " required autocomplete="email" />
+              <label for="email" class="field-label" data-i18n="con.f.email">Email</label>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+
+            <div class="field-group">
+              <input type="tel" id="telefono" name="telefono"
+                     class="field-input" placeholder=" " autocomplete="tel" />
+              <label for="telefono" class="field-label" data-i18n="con.f.tel">Teléfono</label>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+
+            <div class="field-group field-group--select">
+              <select id="tipo-evento" name="tipo-evento"
+                      class="field-input field-input--select" required>
+                <option value="" disabled selected></option>
+                <option value="boda" data-i18n="con.opt.boda">Boda</option>
+                <option value="corporativo" data-i18n="con.opt.corp">Corporativo</option>
+                <option value="celebracion" data-i18n="con.opt.celeb">Celebración</option>
+                <option value="otro" data-i18n="con.opt.otro">Otro</option>
+              </select>
+              <label for="tipo-evento" class="field-label field-label--up" data-i18n="con.f.tipo">Tipo de evento</label>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+
+            <div class="field-group">
+              <input type="date" id="fecha" name="fecha"
+                     class="field-input field-input--date" />
+              <label for="fecha" class="field-label field-label--up" data-i18n="con.f.fecha">Fecha estimada</label>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+
+            <div class="field-group">
+              <input type="number" id="personas" name="personas"
+                     class="field-input" placeholder=" " min="1" />
+              <label for="personas" class="field-label" data-i18n="con.f.personas">Número de personas</label>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+
+            <div class="field-group field-group--select field-group--full">
+              <select id="presupuesto" name="presupuesto"
+                      class="field-input field-input--select" required>
+                <option value="" disabled selected></option>
+                <option value="menos-500">Menos de $500</option>
+                <option value="500-1000">$500 – $1,000</option>
+                <option value="1000-3000">$1,000 – $3,000</option>
+                <option value="3000-5000">$3,000 – $5,000</option>
+                <option value="mas-5000">Más de $5,000</option>
+              </select>
+              <label for="presupuesto" class="field-label field-label--up" data-i18n="con.f.presupuesto">Presupuesto aproximado</label>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+
+            <div class="field-group field-group--full">
+              <textarea id="mensaje" name="mensaje"
+                        class="field-input field-input--textarea"
+                        rows="4" placeholder=" " required></textarea>
+              <label for="mensaje" class="field-label" data-i18n="con.f.mensaje">Mensaje</label>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--block" data-i18n="con.f.submit">Enviar solicitud</button>
+
+          <div class="form-success" id="form-success" role="status" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" stroke="#C6A75E" stroke-width="1.4"/>
+              <path d="M8 12L11 15L16 9" stroke="#C6A75E" stroke-width="1.4"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>¡Gracias! Recibimos tu solicitud. Te contactamos en menos de 24 horas.</p>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- INFO DE CONTACTO -->
+    <section class="contact-info" aria-label="Información de contacto">
+      <div class="container">
+        <div class="contact-info__grid">
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="18" stroke="#C6A75E" stroke-width="1.2"/>
+                <path d="M12 20C12 20 14 14 20 14C26 14 28 20 28 20C28 20 26 26 20 26C14 26 12 20 12 20Z" stroke="#C6A75E" stroke-width="1.2"/>
+                <circle cx="20" cy="20" r="3" stroke="#C6A75E" stroke-width="1.2"/>
+              </svg>
+            </div>
+            <p class="contact-info__title" data-i18n="con.info.email">Email</p>
+            <p class="contact-info__value">
+              <a href="mailto:info@honeyandco.cr">info@honeyandco.cr</a>
+            </p>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M35 19.2C35 27.1 28.7 33.3 21 33.3C18.7 33.3 16.5 32.7 14.7 31.5L5 35L7.2 25.5C5.8 23.6 5 21.5 5 19.2C5 11.3 11.3 5 19 5C26.7 5 35 11.3 35 19.2Z" stroke="#C6A75E" stroke-width="1.2" stroke-linejoin="round"/>
+                <path d="M15 19C15 19 16 20.8 18.5 23C21 25.2 22.5 25 22.5 25L26 22.5L22 19L19.5 21.5L17 19L19.5 16.5L15 12.5L12.5 15" stroke="#C6A75E" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <p class="contact-info__title" data-i18n="con.info.wa">WhatsApp</p>
+            <p class="contact-info__value">
+              <a href="https://wa.me/50683122111" target="_blank" rel="noopener noreferrer">+506 8312-2111</a>
+            </p>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="15" stroke="#C6A75E" stroke-width="1.2"/>
+                <path d="M20 11V20L25 25" stroke="#C6A75E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <p class="contact-info__title" data-i18n="con.info.hours">Horario</p>
+            <p class="contact-info__value">Lunes a viernes<br>9:00 am – 6:00 pm</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Pie de página">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo" aria-label="Honey &amp; Co. — inicio">
+          <img src="logo-full.svg" alt="Honey &amp; Co." class="footer__logo-img" />
+        </a>
+        <p class="footer__tagline" data-i18n="footer.tagline">Donde cada detalle cuenta.</p>
+        <div class="footer__social" aria-label="Redes sociales">
+          <a href="https://www.instagram.com/honeyandco.cr/" class="social-link" aria-label="Instagram @honeyandco.cr" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://wa.me/50683122111" class="social-link" aria-label="WhatsApp +506 8312-2111" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <nav class="footer__nav" aria-label="Navegación secundaria">
+        <p class="footer__col-title" data-i18n="footer.nav.title">Páginas</p>
+        <ul class="footer__nav-list">
+          <li><a href="nosotros.html" class="footer__nav-link" data-i18n="nav.nosotros">Nosotros</a></li>
+          <li><a href="servicios.html" class="footer__nav-link" data-i18n="nav.servicios">Servicios</a></li>
+          <li><a href="galeria.html" class="footer__nav-link" data-i18n="nav.galeria">Galería</a></li>
+          <li><a href="contacto.html" class="footer__nav-link" data-i18n="nav.contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact-col">
+        <p class="footer__col-title" data-i18n="footer.contact.title">Contacto</p>
+        <a href="mailto:info@honeyandco.cr" class="footer__contact-link">info@honeyandco.cr</a>
+        <a href="https://wa.me/50683122111" class="footer__contact-link" target="_blank" rel="noopener noreferrer">+506 8312-2111</a>
+        <a href="https://www.instagram.com/honeyandco.cr/" class="footer__contact-link" target="_blank" rel="noopener noreferrer">@honeyandco.cr</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copy" data-i18n="footer.copy">&copy; 2025 Honey &amp; Co. Costa Rica &middot; Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a href="https://wa.me/50683122111" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chatear por WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
